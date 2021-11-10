@@ -37,10 +37,10 @@ public class SpaceAge
     const double EARTH_ORBIT_IN_SECONDS = 31557600;
 
     
-    private double CalculateAge(double periodInEarthYears)
+    private double CalculateAge(double period)
     {
         
-        return Math.Round(seconds / (EARTH_ORBIT_IN_SECONDS * periodInEarthYears), 2);
+        return Math.Round(seconds / (EARTH_ORBIT_IN_SECONDS * period), 2);
     }
 
     public double OnEarth()
